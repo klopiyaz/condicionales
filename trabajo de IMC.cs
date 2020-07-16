@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp29
+namespace ConsoleApp34
 {
     class Program
     {
@@ -34,7 +34,7 @@ namespace ConsoleApp29
             {
                 Console.WriteLine("obesidad...");
             }
-            else if (imc > 35)
+            else
             {
                 Console.WriteLine("obesidad morbida");
             }
