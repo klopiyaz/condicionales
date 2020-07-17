@@ -4,42 +4,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp31
+namespace ConsoleApp35
 {
     class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Ingrese su salario");
-            double salario = double.Parse(Console.ReadLine());
+            int salario = int.Parse(Console.ReadLine());
 
-            double smmlv = 877800;
-            double valorcuota;
-            double cuotamoderadora;
+            int smmlv = 877800;
 
             if (salario < 2 * smmlv)
             {
                 Console.WriteLine("Tarifa A");
-                cuotamoderadora = smmlv / 30;
-                valorcuota = cuotamoderadora * ((11.5) / 100);
-                Console.WriteLine("valor de cuota: " + valorcuota);
+                Console.WriteLine("copago de 3400$");
             }
             else if (2 * smmlv <= salario && salario <= 5 * smmlv)
             {
                 Console.WriteLine("Tarifa B");
-                cuotamoderadora = smmlv / 30;
-                valorcuota = cuotamoderadora * ((17.3) / 100);
-                Console.WriteLine("valor de cuota: " + valorcuota);
+                Console.WriteLine("copago de 13500$");
             }
             else if (salario > 5 * smmlv)
             {
                 Console.WriteLine("Tarifa c");
-                cuotamoderadora = smmlv / 30;
-                valorcuota = cuotamoderadora * ((23.0) / 100);
-                Console.WriteLine("valor de cuota: " + valorcuota);
+                Console.WriteLine("copago de 35600$");
             }
-
-
         }
     }
 }
